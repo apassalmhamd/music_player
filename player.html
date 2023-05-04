@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coder appas_music player</title>
+    <link rel="stylesheet" href="css/player.css">
+</head>
+<body>
+    <main id="player">
+    <header >
+       <img style="height: 160px; width: 160px; border-radius: 50%;" src="img/logo.png" >
+       <h2>LIVE RADIO</h2>
+         <p id="title_radio">Radio 1</p>
+    </header>
+    <div id="content">
+    <article id="button">
+        <img src="img/back.png" id="back" >
+        <img src="img/play.png" id="playe_pause" >
+        <img src="img/next.png" id="next" >
+        <audio src="music/music.mp3" id="audio_file"></audio>
+    </article>
+    <article id="volume">
+        <h2>الصوت</h2>
+        <input type="range" id="volume_range">
+        <h2>السرعه</h2>
+        <input type="range" id="volume_speed" max="200" min="0"> 
+    </article>
+    <article id="color">
+     <button id="color1"></button>
+     <button id="color2"></button>
+     <button id="color3"></button>
+     <button id="color4"></button>
+    </article>
+    </div>
+    </main>
+    <script src="script/player.js"></script>
+    <script src="script/volume.js"></script>
+    <script src="script/color.js"></script>
+</body>
+</html>
